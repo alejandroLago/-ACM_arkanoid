@@ -39,7 +39,7 @@ public class Arkanoid extends acm.program.GraphicsProgram {
 
 		espacioMenu = getWidth()-numeroLadrillos*anchoLadrillo;//importante cambiar numeroLadrillos
 		add(lateral,numeroLadrillos*anchoLadrillo,0);
-		
+
 		add(pelota1,0,getHeight()*0.60-pelota1.getHeight() );
 		add(barra1,0,getHeight()*0.80);
 		dibujaNivel01();
@@ -68,7 +68,7 @@ public class Arkanoid extends acm.program.GraphicsProgram {
 	}
 
 	public void mouseMoved(MouseEvent evento){
-		barra1.mueveBarra(evento.getX(), numeroLadrillos*anchoLadrillo);//importante cambiar numeroLadrillos
+		barra1.mueveBarra(evento.getX(),numeroLadrillos*anchoLadrillo);//importante cambiar numeroLadrillos
 
 	}
 
@@ -96,7 +96,11 @@ public class Arkanoid extends acm.program.GraphicsProgram {
 
 		for(int j=0; j<10 ;j++){
 			for(int i=0; i<numeroLadrillos2; i++){
-				Ladrillo miLadrillo = new Ladrillo(anchoLadrillo*i,altoLadrillo*j,anchoLadrillo,altoLadrillo,Color.PINK);
+				Ladrillo miLadrillo = new Ladrillo(anchoLadrillo*i,
+						altoLadrillo*j,
+						anchoLadrillo,
+						altoLadrillo,
+						Color.PINK);
 				add(miLadrillo);
 				pause(10);
 			}
