@@ -104,8 +104,11 @@ public class Pelota extends GOval {
 				xVelocidad *=-1;
 			}
 			arkanoid.remove(auxiliar);
+			arkanoid.marcador.actualizaMarcador(1);
 			noHaChocado=false;
-		}else if (auxiliar instanceof Barra){
+		
+		}
+		else if (auxiliar instanceof Barra){
 			yVelocidad*=-1;
 			noHaChocado=false;
 		}

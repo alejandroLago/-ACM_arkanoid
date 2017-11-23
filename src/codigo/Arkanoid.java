@@ -17,13 +17,18 @@ public class Arkanoid extends acm.program.GraphicsProgram {
 	Pelota pelota1=new Pelota(10,Color.BLUE);
 
 	Barra barra1 = new Barra(60, 15, Color.RED);
+	
 	int anchoLadrillo = 25;
 	int altoLadrillo = 15;
+	//ladrillos mapa
 	int numeroLadrillos =14;
 	int numeroLadrillos2 =20;
 
-	int puntuacion = 0;
-	Marcador marcador = new Marcador(20, 40);
+	//el marcador
+	Marcador marcador = new Marcador(40, 40);
+	
+	
+	
 	int espacioMenu;
 
 
